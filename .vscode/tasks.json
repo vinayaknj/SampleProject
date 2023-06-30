@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Build with GCC 13",
+			"command": "C:\\MinGW64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"-std=c++20",
+				"${workspaceFolder}\\*.cpp",
+				"-o",
+				"${fileDirname}\\rooster.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\MinGW64\\bin\\g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build with clang 16",
+			"command": "C:\\mingw64\\bin\\clang++.exe",
+			"args": [
+				"-g",
+				"-std=c++20",
+				"${workspaceFolder}\\*.cpp",
+				"-o",
+				"${fileDirname}\\rooster.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\mingw64\\bin\\clang++.exe"
+		}
+	]
+}
